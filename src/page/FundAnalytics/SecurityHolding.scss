@@ -1,0 +1,65 @@
+ @import '../../assets/all.scss';
+
+
+  
+  .table td {
+    vertical-align: middle;
+  }
+  
+  .text-primary {
+    cursor: pointer;
+  }
+
+  .button-class-div {
+    color: $app_w_color; /* Text color */
+    background-color: $app_primary_color; /* Original background color */
+    border-radius: 20px;
+    width: 5rem;
+    border: none;
+    height: 2.25rem;
+    // transition: all 0.3s ease; /* Smooth transition for hover effect */
+    cursor: not-allowed; /* Show disabled cursor */
+    opacity: 0.5; /* Reduce opacity to give disabled look */
+  }
+  
+  .button-class-div:hover {
+    // pointer-events: none; /* Disable interactions */
+    background-color: $app_primary_color; /* Keep original background color */
+    color: $app_w_color /* Keep original text color */
+  }
+  
+  
+
+  /* Separator Container */
+.separatorDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Separator Line */
+.separatingLine {
+  position: absolute;
+  top: 20%; /* Align the line vertically */
+  right: 0; /* Position it to the right edge */
+  height: 60%; /* Line height */
+  width: 2px; /* Consistent thickness */
+  background-color: #d1d1d1; /* Line color */
+}
+
+/* Responsive Fix for Small Screens */
+@media (max-width: 767px) {
+  .separatingLine {
+    display: none; /* Hide separator on small screens */
+  }
+}
+
+.smallClass{
+  color: $app_primary_color;
+}
+
+.tableDiv{
+  background-color: $app_w_color;
+  border-radius: 15px;
+}

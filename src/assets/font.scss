@@ -1,0 +1,175 @@
+$app_font_Poppins_Black: "Poppins-Black";
+$app_font_Poppins_BlackItalic: "Poppins-BlackItalic";
+$app_font_Poppins_Bold: "Poppins-Bold";
+$app_font_Poppins_BoldItalic: "Poppins-BoldItalic";
+$app_font_Poppins_ExtraBold: "Poppins-ExtraBold";
+$app_font_Poppins_ExtraBoldItalic: "Poppins-ExtraBoldItalic";
+$app_font_Poppins_ExtraLight: "Poppins-ExtraLight";
+$app_font_Poppins_ExtraLightItalic: "Poppins-ExtraLightItalic";
+$app_font_Poppins_Italic: "Poppins-Italic";
+$app_font_Poppins_Light: "Poppins-Light";
+$app_font_Poppins_LightItalic: "Poppins-LightItalic";
+$app_font_Poppins_Medium: "Poppins-Medium";
+$app_font_Poppins_MediumItalic: "Poppins-MediumItalic";
+$app_font_Poppins_Regular: "Poppins-Regular";
+$app_font_Poppins_SemiBold: "Poppins-SemiBold";
+$app_font_Poppins_SemiBoldItalic: "Poppins-SemiBoldItalic";
+$app_font_Poppins_Thin: "Poppins-Thin";
+$app_font_Poppins_ThinItalic: "Poppins-ThinItalic";
+
+$app_font_size_11: 0.6875rem !important; /* 11px */
+$app_font_size_12: clamp(
+  0.625rem,
+  calc(2vw + 0.375rem),
+  0.75rem
+) !important; /* Scales with viewport width (10px to 12px) */
+
+$app_font_size_13: clamp(
+  0.65625rem,
+  calc(2vw + 0.4375rem),
+  0.8125rem
+) !important; /* Scales with viewport width (10.5px to 13px) */
+$app_font_size_14: clamp(
+  0.6875rem,
+  calc(2vw + 0.5rem),
+  0.875rem
+) !important; /* Scales with viewport width (11px to 14px) */
+$app_font_size_15: clamp(
+  0.71875rem,
+  calc(2vw + 0.5625rem),
+  0.9375rem
+) !important; /* Scales with viewport width (11.5px to 15px) */
+$app_font_size_16: clamp(
+  0.75rem,
+  calc(2vw + 0.625rem),
+  1rem
+) !important; /* Scales with viewport width (12px to 16px) */
+$app_font_size_18: clamp(
+  0.875rem,
+  calc(2vw + 0.75rem),
+  1.125rem
+) !important; /* Scales with viewport width (14px to 18px) */
+$app_font_size_19: clamp(
+  0.9375rem,
+  calc(2vw + 0.8125rem),
+  1.1875rem
+) !important; /* Scales with viewport width (15px to 19px) */
+$app_font_size_20: clamp(
+  1rem,
+  calc(2vw + 0.875rem),
+  1.25rem
+) !important; /* Scales with viewport width (16px to 20px) */
+$app_font_size_22: clamp(
+  1.0625rem,
+  calc(2vw + 0.9375rem),
+  1.375rem
+) !important; /* Scales with viewport width (17px to 22px) */
+$app_font_size_24: clamp(
+  1.125rem,
+  calc(2vw + 1rem),
+  1.5rem
+) !important; /* Scales with viewport width (18px to 24px) */
+$app_font_size_26: clamp(
+  1.1875rem,
+  calc(2vw + 1.0625rem),
+  1.625rem
+) !important; /* Scales with viewport width (19px to 26px) */
+$app_font_size_28: clamp(
+  1.25rem,
+  calc(2vw + 1.125rem),
+  1.75rem
+) !important; /* Scales with viewport width (20px to 28px) */
+$app_font_size_30: clamp(
+  1.375rem,
+  calc(2vw + 1.1875rem),
+  1.875rem
+) !important; /* Scales with viewport width (22px to 30px) */
+$app_font_size_32: clamp(
+  1.5rem,
+  calc(2vw + 1.25rem),
+  2rem
+) !important; /* Scales with viewport width (24px to 32px) */
+$app_font_size_36: clamp(
+  1.75rem,
+  calc(2vw + 1.5rem),
+  2.25rem
+) !important; /* Scales with viewport width (28px to 36px) */
+$app_font_size_40: clamp(
+  2rem,
+  calc(2vw + 1.75rem),
+  2.5rem
+) !important; /* Scales with viewport width (32px to 40px) */
+
+@font-face {
+  font-family: $app_font_Poppins_Black;
+  src: url("font/Poppins/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: $app_font_Poppins_BlackItalic;
+  src: url("font/Poppins/Poppins-BlackItalic.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_Bold;
+  src: url("font/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_BoldItalic;
+  src: url("font/Poppins/Poppins-BoldItalic.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_ExtraBold;
+  src: url("font/Poppins/Poppins-ExtraBold.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_ExtraBoldItalic;
+  src: url("font/Poppins/Poppins-ExtraBoldItalic.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_ExtraLight;
+  src: url("font/Poppins/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_ExtraLightItalic;
+  src: url("font/Poppins/Poppins-ExtraLightItalic.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_Italic;
+  src: url("font/Poppins/Poppins-Italic.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_Light;
+  src: url("font/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_LightItalic;
+  src: url("font/Poppins/Poppins-LightItalic.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_Medium;
+  src: url("font/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_MediumItalic;
+  src: url("font/Poppins/Poppins-MediumItalic.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_Regular;
+  src: url("font/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_SemiBold;
+  src: url("font/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_SemiBoldItalic;
+  src: url("font/Poppins/Poppins-SemiBoldItalic.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_Thin;
+  src: url("font/Poppins/Poppins-Thin.ttf");
+}
+@font-face {
+  font-family: $app_font_Poppins_ThinItalic;
+  src: url("font/Poppins/Poppins-ThinItalic.ttf");
+}

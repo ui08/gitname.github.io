@@ -1,0 +1,168 @@
+@import "../../../assets/all.scss";
+.stepper {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 20px 0;
+
+  .step {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    &:last-child {
+      .dot {
+        &:after {
+          display: none;
+        }
+      }
+      .smalldot {
+        display: none;
+      }
+    }
+
+    &:first-child {
+      .dot {
+        /* Ellipse 260 */
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+    .dot {
+      width: 48px;
+      height: 47px;
+
+      border-radius: 50%;
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      /* Ellipse 260 */
+      color: rgba(var(--sidebar_background_clolor), 0.2);
+      font-size: $app_font_size_24;
+      background: rgba(var(--sidebar_background_clolor), 0.2);
+      border: 2px dashed rgba(var(--sidebar_background_clolor), 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:after {
+        content: "";
+        width: 65px;
+        height: 2px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+
+        border: 2px dashed rgba(var(--sidebar_background_clolor), 0.5);
+        z-index: 0;
+      }
+      &:before {
+        content: "";
+        width: 75px;
+        height: 2px;
+        position: absolute;
+        left: -165%;
+        top: 50%;
+
+        border: 2px dashed rgba(var(--sidebar_background_clolor), 0.5);
+        z-index: 0;
+      }
+    }
+    .smalldot {
+      position: absolute;
+      top: 10px;
+      right: -10px;
+      /* Ellipse 264 */
+      border-radius: 50%;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      border: 2px dashed rgba(var(--sidebar_background_clolor), 0.5);
+      background: rgba(var(--sidebar_background_clolor), 0.2);
+      color: $app_w_color;
+      z-index: 1;
+    }
+  }
+  .stepperactive {
+    .dot {
+      /* Ellipse 257 */
+
+      box-sizing: border-box;
+      color: rgba(var(--sidebar_background_clolor), 1);
+      border: 2px solid rgba(var(--sidebar_background_clolor), 1);
+      &:after {
+        border: 2px solid rgba(var(--sidebar_background_clolor), 1);
+      }
+      &:before {
+        border: 2px solid rgba(var(--sidebar_background_clolor), 1);
+      }
+    }
+    .smalldot {
+      border: 2px solid rgba(var(--sidebar_background_clolor), 1);
+      background: rgba(var(--sidebar_background_clolor), 1);
+    }
+  }
+
+  .stepperInProgress {
+    .dot {
+      /* Ellipse 257 */
+
+      box-sizing: border-box;
+      color: rgba(var(--sidebar_background_clolor), 1);
+      border: 2px solid rgba(var(--sidebar_background_clolor), 1);
+      &:after {
+        border: 2px solid rgba(var(--sidebar_background_clolor), 1);
+      }
+      &:before {
+        border: 2px solid rgba(var(--sidebar_background_clolor), 1);
+      }
+    }
+    .smalldot {
+      border: 2px dashed rgba(var(--sidebar_background_clolor), 0.5);
+      background: rgba(var(--sidebar_background_clolor), 1);
+      color: $app_w_color;
+    }
+  }
+
+  .stepperedit {
+    .dot {
+      /* Ellipse 257 */
+      background-color: rgba(var(--warning-color), 1);
+      box-sizing: border-box;
+      color: rgba(var(--W_color), 1);
+      border: 2px solid rgba(var(--warning-color), 1);
+      &:after {
+        border: 2px solid rgba(var(--warning-color), 1);
+      }
+      &:before {
+        border: 2px solid rgba(var(--warning-color), 1);
+      }
+    }
+    .smalldot {
+      border: 2px solid rgba(var(--sidebar_background_clolor), 1);
+      background: rgba(var(--warning-color), 1);
+      color: rgba(var(--W_color), 1);
+    }
+  }
+}
+.lower-text {
+  /* supporting-text */
+
+  font-family: $app_font_Poppins_Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $app_font_size_16;
+  line-height: 28px;
+  /* identical to box height, or 112% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: $app_default_text_color;
+}

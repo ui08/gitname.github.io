@@ -1,0 +1,45 @@
+@import "../../../assets/all.scss";
+
+.table_Component {
+  border-collapse: collapse;
+  width: 100%;
+  thead {
+    th {
+      font-family: $app_font_Poppins_Regular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      padding: 10px;
+      border-bottom: 1px solid rgba(var(--app_body_bg_color), 1);
+      color: $app_default_text_color;
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 10px;
+        border-bottom: 1px solid rgba(var(--app_body_bg_color), 1);
+        font-family: $app_font_Poppins_Regular;
+        letter-spacing: 0.5px;
+        color: $app_default_text_color;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 28px;
+      }
+    }
+  }
+
+  tr {
+    &:nth-child(even) {
+      background: rgba(var(--app_body_bg_color), 1) !important;
+    }
+  }
+}
+
+.ammount_Value {
+  display: flex;
+  justify-content: end;
+}

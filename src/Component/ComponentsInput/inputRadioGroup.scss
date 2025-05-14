@@ -1,0 +1,75 @@
+@import "../../assets/all.scss";
+.Inputradiobox {
+  display: flex;
+
+  cursor: pointer;
+}
+
+.Inputradiobox input[type="radiobox"] {
+}
+
+.geekmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: green;
+}
+
+.Inputradiobox:hover input ~ .geekmark {
+  background-color: yellow;
+}
+
+.Inputradiobox input:active ~ .geekmark {
+  background-color: red;
+}
+
+.Inputradiobox input:radioed ~ .geekmark {
+  background-color: green;
+}
+
+.geekmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.Inputradiobox input:radioed ~ .geekmark:after {
+  display: block;
+}
+
+.Inputradiobox .geekmark:after {
+  left: 6px;
+  bottom: 5px;
+  width: 6px;
+  height: 6px;
+  border-width: 4px 4px 4px 4px;
+}
+.Inputradiobox-input {
+  margin: 0 10px 0 0;
+  display: block;
+  padding: 10px;
+  width: 20px;
+}
+.Inputradiodiv {
+  display: flex;
+  margin: 10px;
+}
+
+.radiobox_style {
+  position: relative;
+  top: -80px;
+}
+
+.Inputradiobox {
+  --radio-color: $app_primary_color; // Default fallback
+
+  input[type="radio"] {
+    accent-color: var(--radio-color); // Modern browsers
+    // OR for full control (older browsers):
+    &::before {
+      background-color: var(--radio-color);
+    }
+  }
+}

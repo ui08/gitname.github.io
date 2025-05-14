@@ -1,0 +1,40 @@
+@import "../assets/all.scss";
+.menu-bar {
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+  font-size: $app_font_size_20;
+  color: white;
+  z-index: 10;
+  height: 100vh;
+  background: aliceblue;
+  overflow: auto;
+  @media (max-width: 767px) {
+    display: inline-block;
+    position: fixed;
+    z-index: 100;
+    color: white;
+  }
+
+  @media (width: 768px) {
+    display: inline-block;
+    position: fixed;
+    z-index: 100;
+    color: white;
+  }
+}
+.ps-menu-button {
+  &:hover {
+    color: rgba(var(--sidebar-text-color), 1);
+  }
+  .ps-menu-label {
+    a {
+      text-decoration: none;
+      color: rgba(var(--sidebar-text-color), 1);
+      &:hover {
+        color: rgba(var(--sidebar-text-color), 1);
+        text-decoration: underline;
+      }
+    }
+  }
+}

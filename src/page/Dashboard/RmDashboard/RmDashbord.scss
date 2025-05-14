@@ -1,0 +1,613 @@
+@import "../../../assets/all.scss";
+
+
+.watchnavigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 301px;
+}
+.NewsCarouselrm {
+  padding: 10px;
+  border-radius: 28px !important;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 28px;
+  height: 350px;
+}
+.rm_content_1 {
+  min-height: 300px;
+}
+.rmTotalValue {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  p {
+  }
+  span {
+  }
+}
+.reaumcharts_sidebar {
+  background-color: $app_w_color;
+  padding: 10px;
+  border-radius: 28px !important;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 28px;
+  height: 350px;
+}
+
+.InformationTable {
+  .AgGridTableCol {
+    min-height: 45vh;
+  }
+}
+
+.reaumcharts {
+  width: 100%;
+  margin-top: -40px;
+
+  .recharts-wrapper {
+  }
+
+  .recharts-legend-item {
+    .recharts-default-legend {
+      bottom: 10px;
+    }
+    svg {
+      width: 16px !important;
+      height: 15px !important;
+    }
+  }
+  .recharts-legend-wrapper {
+    bottom: 30px !important;
+  }
+}
+
+.divvalue {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  span {
+    font-family: $app_font_Poppins_Medium;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $app_font_size_20;
+    line-height: 18px;
+    align-items: center;
+  }
+}
+// .reaumcharts {
+//   width: 100%;
+//   height: 350px;
+
+//   .recharts-legend-wrapper {
+//     transform: translate(10px, -30px);
+//   }
+//   .recharts-wrapper {
+//     width: calc(100% - 48px) !important;
+//   }
+//   .recharts-legend-item {
+//     svg {
+//       width: 16px !important;
+//       height: 15px !important;
+//     }
+//   }
+// }
+.Transaction_Product_Type_charts {
+}
+.newscard {
+  height: 400px;
+
+  .newscardValue {
+    .newscardValuediv {
+      button {
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .newscardtext_title {
+      }
+    }
+  }
+}
+
+.newscardimg {
+  aspect-ratio: 16 / 9;
+  object-fit: fill;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.newscardtext {
+  position: absolute;
+  bottom: 1px;
+  width: calc(100% - 2px);
+  padding: 10px;
+  background: #000000c4;
+  margin: 0 auto;
+  left: 1px;
+  font-size: $app_font_size_14;
+  color: #fff;
+  font-family: $app_font_Poppins_Regular;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.newscardbtn {
+  position: absolute;
+  bottom: 40%;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-weight: bold;
+  z-index: 10;
+
+  svg {
+    font-weight: 900;
+    color: #ffffff;
+  }
+}
+.newscardNextbtn {
+  left: 86%;
+}
+.newscardPreviousbtn,
+.newscard0Nextbtn {
+  left: 0%;
+}
+
+.mincards {
+}
+.btnGro {
+  display: flex;
+  margin-bottom: 25px;
+
+  .My_all_btn {
+    /* Frame 32 */
+    margin-left: 15px;
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-family: $app_font_Poppins_Medium;
+    width: 85px;
+    height: 46px;
+    border-radius: 0;
+    background: #f6f9ff;
+    border-bottom: 1px solid #e3ebff;
+  }
+  .actbtn {
+    color: #38479b;
+
+    background: #f6f9ff;
+    border-bottom: 1px solid #38479b;
+  }
+}
+.Rm_content_2 {
+  min-height: 380px;
+  margin-bottom: 10px;
+
+  @include screen-xxl() {
+    height: 380px;
+  }
+  @include screen-xl() {
+    height: 380px;
+  }
+  @include screen-lg() {
+    height: 380px;
+  }
+  @include screen-md() {
+    height: 380px;
+  }
+
+  @include screen-sm() {
+    height: 380px;
+    padding: 0%;
+  }
+
+  @include screen-xs() {
+    height: 380px;
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+
+  @include screen-xxs() {
+    height: 300px;
+  }
+}
+
+.Rm_screen_content_2 {
+  max-height: 450px;
+  margin-bottom: 10px;
+
+  @include screen-xxl() {
+    max-height: 450px;
+  }
+  @include screen-xl() {
+    max-height: 450px;
+  }
+  @include screen-lg() {
+    max-height: 450px;
+  }
+  @include screen-md() {
+    max-height: 450px;
+  }
+
+  @include screen-sm() {
+    max-height: 450px;
+    padding: 0%;
+  }
+
+  @include screen-xs() {
+    max-height: 450px;
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+
+  @include screen-xxs() {
+    max-height: 350px;
+  }
+}
+
+.Rm_scr_content_1 {
+  height: 470px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+
+  @include screen-xxl() {
+    height: 470px;
+  }
+  @include screen-xl() {
+    height: 470px;
+  }
+  @include screen-lg() {
+    height: 470px;
+  }
+  @include screen-md() {
+    height: 470px;
+  }
+
+  @include screen-sm() {
+    height: 470px;
+    padding: 0%;
+  }
+
+  @include screen-xs() {
+    height: 470px;
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+
+  @include screen-xxs() {
+    height: 350px;
+  }
+}
+.Watchlistcard_Rm_content_2 {
+  min-height: 380px;
+}
+.Niftybox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.watchBox {
+  box-sizing: border-box;
+  width: 309px;
+  height: 33px;
+  background: #eafff0;
+  /* border-radius: 18px; */
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  padding: 11px;
+  margin: 0;
+  p {
+    display: block;
+    max-width: 100%;
+    max-height: 46px;
+    margin: 0 auto;
+    font-size: clamp(0.6875rem, calc(2vw + 0.5rem), 0.875rem) !important;
+    font-family: $app_font_Poppins_Regular;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+  }
+}
+.Watchlistcard {
+  margin: 15px 0 0 0px;
+  height: 90px;
+  padding-top: 10px;
+  .WatchlistcardValuediv {
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    .Watchlistcardtext {
+      justify-content: space-around;
+      align-items: center;
+    }
+    .Watchlistcardtext_btn {
+      width: 50px;
+      height: 50px;
+      background: $app_primary_color;
+      border-radius: 50%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      svg {
+        width: 22px;
+        height: 23px;
+        color: $app_w_color;
+      }
+    }
+    .Watchlistcardtext_name {
+      font-family: $app_font_Poppins_Medium;
+      font-style: normal;
+      font-weight: 400;
+      font-size: $app_font_size_20;
+      line-height: 24px;
+      /* identical to box height, or 120% */
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.5px;
+      margin-bottom: 0;
+      color: $app_primary_color;
+    }
+  }
+}
+.Watchlistcard {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  // margin-top: 1px;
+  padding: 10px;
+  background-color: $app_w_color;
+
+  padding: 10px;
+  border-radius: 28px !important;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  // border-radius: 28px;
+  background-color: $app_w_color;
+}
+.totaldivRM {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  // margin-top: 1px;
+  padding: 10px;
+  background-color: $app_w_color;
+  width: 50%;
+  padding: 15px 22px;
+  border-radius: 28px !important;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  // border-radius: 28px;
+  background-color: $app_w_color;
+}
+/* Group 65 */
+.RMUndermeauto {
+  padding: 10px;
+  border-radius: 28px !important;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 28px;
+  background-color: $app_w_color;
+}
+.RMUnderme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .Under {
+    width: calc(100% - 50px);
+    display: flex;
+    margin: 15px;
+    .Undericon {
+      /* Ellipse 153 */
+      width: 30px;
+      height: 30px;
+      background: rgba(var(--primary-color), 1);
+      margin: 10px;
+      padding: 30px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      color: #fff;
+    }
+    .UnderBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: flex-start;
+      margin-left: 10px;
+      .Underlable {
+        align-content: flex-start;
+        display: flex;
+        justify-content: center;
+        /* RM Under me */
+
+        font-family: $app_font_Poppins_Regular;
+        font-style: normal;
+        font-weight: 300;
+        font-size: $app_font_size_16;
+        line-height: 24px;
+
+        letter-spacing: 0.5px;
+
+        color: $app_default_text_color;
+      }
+      .Undervalue {
+        align-items: start;
+        display: flex;
+
+        /* 12 */
+
+        font-family: $app_font_Poppins_Regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $app_font_size_32;
+        line-height: 24px;
+        /* identical to box height, or 75% */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.5px;
+
+        color: $app_default_text_color;
+      }
+    }
+  }
+}
+
+.btnGro {
+  display: flex;
+  margin-bottom: 25px;
+
+  .My_all_btn {
+    /* Frame 32 */
+    margin-left: 15px;
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-family: $app_font_Poppins_Medium;
+    width: 85px;
+    height: 46px;
+    border-radius: 0;
+    background: #f6f9ff;
+    border-bottom: 1px solid #e3ebff;
+  }
+  .actbtn {
+    color: #38479b;
+
+    background: #f6f9ff;
+    border-bottom: 1px solid #38479b;
+  }
+}
+.Informationcard {
+  padding: 10px;
+  border-radius: 28px !important;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 28px;
+  background-color: $app_w_color;
+}
+.btnGrocard {
+  height: 110px;
+  padding: 10px;
+  border-radius: 28px !important;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 28px;
+  background-color: $app_w_color;
+
+  .btnGrocardTitle {
+    .btnGrocardtext {
+      display: flex;
+      /* flex-direction: row; */
+      /* justify-content: center; */
+      align-items: center;
+      padding: 15px;
+      gap: 9px;
+
+      .icon {
+        font-weight: 500;
+        font-size: $app_font_size_20;
+      }
+      .text {
+        /* Label */
+
+        font-family: $app_font_Poppins_Medium;
+        font-style: normal;
+        font-weight: 500;
+        font-size: $app_font_size_20;
+        line-height: 20px;
+      }
+    }
+    .btnGrovalue {
+      display: flex;
+      justify-content: space-around;
+      margin: 9px 0 30px;
+      svg {
+        width: 90px;
+        height: 110px;
+      }
+    }
+  }
+}
+.activefamily {
+  border: 2px solid rgb(96, 118, 250);
+}
+.activeclient {
+  border: 2px solid rgb(250, 96, 169);
+}
+.activerm {
+  border: 2px solid rgb(254, 196, 69);
+}
+.activeprospect {
+  border: 2px solid rgb(243, 111, 86);
+}
+
+.buttonGrocard {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+.RmDashbord_card {
+  /* Rectangle 331 */
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+
+  background: $app_w_color;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 25px;
+  font-family: $app_font_Poppins_Regular;
+
+  &_header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $app_font_size_18;
+    line-height: 28px;
+    /* or 140% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    color: $app_default_text_color;
+    margin-bottom: 15px;
+  }
+  &_body {
+  }
+}
+.card_desgn {
+  display: flex;
+  position: relative;
+}
+.btn_desgn {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+}
+.image_desgn {
+  width: 65%;
+}

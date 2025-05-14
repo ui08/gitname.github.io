@@ -1,0 +1,78 @@
+.last-transaction {
+  width: 100%;
+  }
+  
+  .last-transaction ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .transaction-item {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding: 10px 0;
+  }
+  
+  .step-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .rupee-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #F3F8FF;
+    color: #6A6AB6;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: $app_font_size_16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .line {
+    width: 2px;
+    height: 40px;
+    background-color: transparent; /* Remove solid background */
+    border-left: 3px dotted #6A6AB6; /* Add dotted border */
+    margin-top: 5px;
+  }
+  
+  .transaction-details-container {
+    flex: 1;
+  }
+  
+  .transaction-details {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: $app_font_size_14;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .amount {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .type {
+    font-style: italic;
+    margin-left: 5px;
+  }
+  
+  .date {
+    color: #888;
+    margin-left: 5px;
+  }
+  
+  .fund {
+    font-size: $app_font_size_13;
+    color: #444;
+    margin-top: 2px;
+  }
+  

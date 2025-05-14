@@ -1,0 +1,72 @@
+@import "../../assets/all.scss";
+.Permissionslist {
+}
+// PermissionslistChoices
+// PermissionslistChosen
+.PermissionslistChosen {
+  border: 1px solid $app_body_background_color;
+  padding: 0;
+}
+.Permissionslistselectedcard {
+  height: 400px;
+  overflow: auto;
+  .listitem {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    &:nth-child(odd) {
+      background: $app_w_color;
+    }
+
+    &:nth-child(even) {
+      background: $app_body_background_color;
+    }
+  }
+}
+.PermissionslistChosenselected {
+  height: 400px;
+  overflow: auto;
+}
+.Permissionslistselectedtitle {
+  background: $app_body_background_color;
+  color: $app_default_text_color;
+  .titletext {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 1rem;
+    font-weight: 500;
+    font-size: $app_font_size_20;
+    left: 1rem;
+  }
+  .searchbox {
+  }
+  .checkboxdiv {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.checkboxdivtitletext {
+  font-weight: 500;
+  font-size: $app_font_size_15;
+}
+.PermissionslistButtonComp {
+  margin: auto;
+}
+.checkboxdivCheckboxtitletext {
+  position: relative;
+}
+.scheme_element{
+  display: flex;
+  position: relative;
+}
+.checkboxbr {
+  border-top: 5px solid #fff;
+}
+.checkbox_scheme {
+    position: absolute;
+    top: -25px;
+    right: 20px;
+    width: 50%;
+}

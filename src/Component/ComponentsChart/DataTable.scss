@@ -1,0 +1,74 @@
+/* DataTable.css */
+
+.table-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  .table-header {
+    background-color: #f0f4ff;
+    text-align: left;
+    padding: 0.75rem;
+    font-weight: 500;
+    color: #4a4a4a;
+    font-size: 0.9rem;
+    font-weight: bold; /* This will make the header bold */
+  }
+  
+  .table-row {
+    text-align: left;
+  }
+  
+  .table-cell {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .table-row:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .table-header,
+  .table-cell {
+    border: none; /* No border lines between cells */
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-header {
+    text-align: left;
+    padding: 0.75rem;
+    color: #4a4a4a;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .header-text {
+    background-color: #f0f4ff; /* Background color for text only */
+    padding: 0.1rem 0.3rem;    /* Adjust padding around the text */
+    border-radius: 3px;        /* Optional: Add rounded corners */
+  }
+  
+  

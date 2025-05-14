@@ -1,0 +1,87 @@
+@import "../../assets/all.scss";
+
+.StocksOverlappingDiv {
+  background-color: $app_w_color;
+  border-radius: 1rem;
+}
+.StocksOverlappingtable {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 10px 15px;
+    text-align: left;
+    &:nth-child(1) {
+      width: 30%;
+    }
+    &:nth-child(2) {
+      width: 40%;
+    }
+    &:nth-child(3) {
+      width: 30%;
+    }
+  }
+
+  th {
+    font-weight: bold;
+    color: #333;
+    font-size: $app_font_size_14;;
+    &:nth-child(1) {
+      width: 30%;
+    }
+    &:nth-child(2) {
+      width: 40%;
+    }
+    &:nth-child(3) {
+      width: 30%;
+    }
+  }
+
+  td {
+    font-size: $app_font_size_14;;
+    color: #555;
+  }
+}
+
+.custom-progresss-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Add gap between the progress bars */
+}
+
+.custom-progresss {
+  height: 6px; /* Adjust the height of the progress bar */
+  border-radius: 4px !important; /* Add rounded corners */
+}
+.pinkbar-progresss{
+  background: transparent;
+  .bg-pinkbar-progresss{
+    background-color: #fa60a9;
+  }
+}
+.bluebar-progresss{
+  background: transparent;
+  .bg-bluebar-progresss{
+    background-color: #638AFF;
+  }
+}
+.bluebar {
+  color: #638AFF; /* Light blue */
+  margin-right: 8px;
+}
+.pinkbar {
+  color: #fa60a9; /* Pink */
+  margin-right: 8px;
+}
+.custom-progresss .progress-bar {
+  background-color: #638aff !important; /* Light blue */
+}
+
+.custom-progress2 {
+  height: 6px; /* Adjust the height of the progress bar */
+  border-radius: 4px !important; /* Add rounded corners */
+}
+
+.custom-progress2 .progress-bar {
+}

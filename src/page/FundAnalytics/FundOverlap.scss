@@ -1,0 +1,193 @@
+@import "../../assets/all.scss";
+:root {
+  --primary-common-color: 153, 93, 180;
+}
+.fundOverlapDiv{
+  background-color: $app_w_color;
+  border-radius: 15px;
+  padding: 15px;
+}
+.gapFund {
+  width: 100%;
+  height: 20px;
+  background: rgba(var(--primary-common-color), 0.3);
+}
+.Common_Stocks {
+  border-left: 1px solid #000;
+  .Common_Stocks_title {
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $app_font_size_18;
+    line-height: 24px;
+
+    color: rgba(var(--default_text_color), 1);
+  }
+
+  .common_box1 {
+    /* Rectangle 454 */
+    width: 310px;
+    height: 231px;
+    background: rgba(var(--primary-common-color), 0.1);
+    border-radius: 12px;
+    padding: 10px;
+
+    .polygongap {
+      clip-path: polygon(
+        50% 0%,
+        /* Top center */ 90% 25%,
+        /* Top right */ 90% 75%,
+        /* Bottom right */ 50% 100%,
+        /* Bottom center */ 10% 75%,
+        /* Bottom left */ 10% 25% /* Top left */
+      );
+      background: rgba(var(--primary-common-color), 0.45);
+      width: 110px;
+      height: 100px;
+      padding: 35px;
+      margin-top: 30px;
+      border-radius: 25px; /* Optional for smooth edges */
+      margin-left: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white; /* Adjust text color */
+      font-size: $app_font_size_18;
+      font-weight: bold;
+    }
+  }
+
+  .common_box2 {
+    /* Rectangle 454 */
+    width: 310px;
+    height: 231px;
+    padding: 10px;
+    background: rgba(var(--primary-common-color), 0.2);
+    border-radius: 12px;
+
+    .polygongap {
+      clip-path: polygon(
+        50% 0%,
+        /* Top center */ 90% 25%,
+        /* Top right */ 90% 75%,
+        /* Bottom right */ 50% 100%,
+        /* Bottom center */ 10% 75%,
+        /* Bottom left */ 10% 25% /* Top left */
+      );
+      background: rgba(var(--primary-common-color), 0.9);
+      width: 110px;
+      height: 100px;
+      padding: 35px;
+      margin-top: 30px;
+      border-radius: 12px; /* Optional for smooth edges */
+      margin-left: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white; /* Adjust text color */
+      font-size: $app_font_size_18;
+      font-weight: bold;
+    }
+  }
+  .graptext {
+    /* supporting-text */
+
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $app_font_size_18;
+    line-height: 80px;
+
+    color: rgba(var(--default_text_color), 1);
+  }
+  .common_value {
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $app_font_size_32;
+    line-height: 24px;
+
+    color: rgba(var(--default_text_color), 1);
+  }
+  .common_lable {
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $app_font_size_18;
+    line-height: 50px;
+
+    color: rgba(var(--default_text_color), 1);
+  }
+}
+
+.fund-overlap-container {
+  .search-bars {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px -10px;
+    background-color: #ffffff;
+    height: 150px;
+    border-radius: 25px;
+
+    .search-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      label {
+        white-space: nowrap;
+        font-size: $app_font_size_14;
+
+        &.label-scheme-a {
+          color: #ff69b4; // Pink for Scheme A
+        }
+
+        &.label-scheme-b {
+          color: #0000ff; // Blue for Scheme B
+        }
+      }
+      .searchfund {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        padding: 10px 20px;
+        width: 100%;
+        font-size: $app_font_size_16;
+        outline: none;
+
+        &.searchfund1 {
+          border-color: #ff69b4; // Pink
+        }
+
+        &.searchfund2 {
+          border-color: #0000ff; // Blue
+        }
+      }
+    }
+  }
+
+  .stock-lists {
+    display: flex;
+    justify-content: space-around;
+
+    div {
+      padding: 10px;
+      text-align: center;
+
+      h4 {
+        font-size: $app_font_size_18;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      p {
+        background: #f9f9f9;
+        border-radius: 10px;
+        margin: 5px 0;
+        padding: 5px;
+        font-size: $app_font_size_14;
+      }
+    }
+  }
+}

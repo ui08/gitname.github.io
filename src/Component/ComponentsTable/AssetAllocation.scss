@@ -1,0 +1,44 @@
+@import '../../assets/all.scss';
+
+.asset-allocation-container {
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+  }
+  
+  .asset-allocation-title {
+    font-size: $app_font_size_16;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .asset-allocation-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .asset-allocation-row {
+    // border-bottom: 1px solid #f0f0f0;
+  
+    &:nth-child(even) {
+        background-color: #ffffff; // White for odd rows
+    }
+    
+    &:nth-child(odd) {
+        background-color: rgb(243, 248, 255) 
+    }
+  }
+  
+  .asset-allocation-label {
+    padding: 12px 0;
+    color: #333;
+    font-size: $app_font_size_14;
+  }
+  
+  .asset-allocation-value {
+    padding: 8px 0;
+    text-align: right;
+    color: #666;
+    font-size: $app_font_size_14;
+  }
+  

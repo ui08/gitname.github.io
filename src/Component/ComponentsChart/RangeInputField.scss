@@ -1,0 +1,99 @@
+@import "../../assets/all.scss";
+.range-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.range-input-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  color: #4a4a4a;
+}
+
+.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.icon {
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+.progress-bar {
+  background-color: #f0f4ff;
+  height: 15px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.iconClass {
+}
+
+.negativeClass {
+  color: red;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+.positiveClass {
+  color: green;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.bg-Unrealised_Gain_Loss {
+  background-color: #ffc107;
+}
+.bg-Absolute_Return {
+  background-color: #8b5cf6;
+}
+.bg-Annualised_Return {
+  background-color: #fb7185;
+}
+.Unrealised_Gain_Loss {
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+.Absolute_Return {
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+.Annualised_Return {
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}

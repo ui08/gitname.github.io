@@ -1,0 +1,23 @@
+{
+  "App_lms_Messages_00001": "{{lable}} should not be blank. ",
+  "interventionCreateMessage": "Intervention successfully created",
+  "toggleActivate": "Do you really want to activate ?",
+  "toggleDeactivate": "Do you really want to deactivate ?",
+  "CreateMessage": "{{mode}} successfully created",
+  "UpdateMessage": "{{mode}} successfully updated",
+  "DeleteMessage": "{{mode}} successfully deleted",
+  "ActivateMessage": "{{mode}} successfully activated",
+  "InactiveMessage": "{{mode}} successfully deactivated",
+  "DownloadTemplate": "Template successfully downloaded",
+  "UploadTemplate": "Template successfully uploaded",
+  "FileDownload": "File successfully downloaded",
+  "toggleSuccess":"Success",
+  "onlyAlphabets": "{{label}} can accept only alphabets a-z or A-Z",
+  "alphaNumericWithoutSymbol": "{{label}} can accept alphanumeric values",
+  "onlyNumber": "{{label}} can accept only numeric values 0-9",
+  "onlyEmail": "{{label}} must be valid containing @ ",
+  "invalid": "{{label}} is invalid",
+  "invaliduser": " should not be blank. ",
+  "termsConditions": "Please accept the terms and conditions to continue.",
+  "onlyDecimal" : "{{label}} can accept decimal numbers"
+}

@@ -1,0 +1,33 @@
+@import "../../assets/all.scss";
+.app_breadcrumb {
+  .app_breadcrumb_ol {
+    list-style: "none";
+    padding: 0;
+    margin: 0;
+    .app_breadcrumb_li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        /* Abhijeet Singh */
+
+        font-family: $app_font_Poppins_Regular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: $app_font_size_22;
+        line-height: 24px;
+
+        svg {
+          font-size: 10px;
+        }
+      }
+      .activeLink {
+        color: $app_breadcrumb_color;
+      }
+      .li_Link {
+        color: $app_breadcrumb_color;
+        text-transform: capitalize;
+        // opacity: 0.8;
+      }
+    }
+  }
+}

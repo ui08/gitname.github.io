@@ -1,0 +1,84 @@
+@import "../assets/color.scss";
+@import "../assets/all.scss";
+.ClienttormName {
+  font-family: $app_font_Poppins_Medium;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $app_font_size_16;
+  line-height: 18px;
+  padding-left: 30px;
+  margin-bottom: 0;
+}
+
+.pageheader {
+  .stock-section {
+    display: flex;
+    align-items: center;
+
+    .ticker-container {
+      overflow: hidden;
+      width: 97%; // Adjust width as needed
+      margin-left: 20px;
+
+      .ticker-wrapper {
+        display: flex;
+        animation: slide-left 20s linear infinite; // Keyframes animation
+
+        // Stop the animation when the container or a tile is hovered
+        &:hover {
+          animation-play-state: paused;
+        }
+      }
+
+      .BSEBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: $app_w_color;
+        border: 1px solid $app_primary_color;
+        border-radius: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 208px;
+        height: 32px;
+        margin-right: 10px;
+
+        .name {
+          font-family: $app_font_Poppins_Regular;
+          font-style: normal;
+          font-weight: 400;
+          font-size: $app_font_size_11;
+          line-height: 18px;
+        }
+
+        .value {
+          font-family: $app_font_Poppins_Medium;
+          color: #333;
+          font-weight: bold;
+          font-size: $app_font_size_11;
+          line-height: 18px;
+        }
+
+        .per {
+          font-family: $app_font_Poppins_Regular;
+          font-size: $app_font_size_11;
+          line-height: 18px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+//   Keyframes for sliding ticker animation
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

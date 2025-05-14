@@ -1,0 +1,85 @@
+/* RiskGauge.css */
+
+/* Main container styling */
+@import "/src/assets/all.scss";
+.risk-gauge-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Buttons styling */
+.risk-button {
+  padding: 10px;
+  margin: 10px;
+  background-color: #2d42fc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: $app_font_size_14;
+}
+
+.risk-button:hover {
+  background-color: #1a2a9c;
+}
+
+/* Dropdown styling */
+.risk-dropdown {
+  margin-top: 10px;
+}
+
+.risk-dropdown select {
+  padding: 8px;
+  font-size: $app_font_size_14;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.risk-profile-text {
+  margin-top: 15px;
+  font-size: $app_font_size_16;
+  width: 35rem;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.legend-color {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.risk-legend {
+  text-align: left;
+
+  h4 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .legend-items {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    white-space: nowrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .legend-text {
+    font-size: $app_font_size_14;
+  }
+}

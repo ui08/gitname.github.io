@@ -1,0 +1,86 @@
+@import "../../assets/all.scss";
+
+.errormark,
+.errorlable {
+  color: red;
+}
+.textdanger {
+  color: red;
+}
+.date-input-field {
+  width: 100%;
+  border: 1px solid rgba(var(--primary-color), 1);
+  outline: none;
+  background: $app_w_color;
+  box-shadow: rgba(var(--primary-color), 0.1) 0px 1px 3px 0px,
+    rgba(var(--primary-color), 0.06) 0px 1px 2px 0px;
+
+  border-radius: 15px;
+  color: $app_form_label_color;
+  position: relative;
+  height: 3rem;
+  margin: 1rem 0;
+  label {
+    position: relative;
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 1rem;
+    top: -0.9rem !important;
+    left: 10px;
+    font-size: 0.75rem !important;
+    z-index: 9;
+    width: 100%;
+    padding-left: 15px;
+    transition: all 0.2s ease;
+    z-index: 1;
+    transition: all 0.2s ease;
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: $app_form_label_color;
+    background-color: $app_w_color;
+    padding-left: 5px;
+    width: fit-content;
+  }
+  input {
+    position: relative;
+    top: -20px;
+
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 24px;
+    resize: none;
+    border: none;
+    outline: none;
+    background: $app_w_color;
+
+    transition: all 0.2s ease;
+    border-radius: 15px;
+    color: $app_form_label_color;
+  }
+}
+.MuiOutlinedInput-notchedOutline {
+  border-radius: 0 !important;
+  border: none !important;
+}
+.MuiTextField-root {
+  width: 100%;
+  position: relative;
+  height: 3.5rem;
+  margin: 1rem 0;
+}
+.MuiInputAdornment-root {
+  position: relative;
+  top: -15px;
+}
+.errorClassdate {
+  position: relative;
+  top: -35px;
+  left: 13px;
+}

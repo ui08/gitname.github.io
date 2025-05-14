@@ -1,0 +1,195 @@
+@import "../../assets/all.scss";
+
+.riskProfileAdvisorMainDiv {
+  justify-content: stretch;
+}
+.rpc-container {
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px 0 $app_body_background_color, 0 6px 20px 0 $app_body_background_color;
+  transition: box-shadow 0.3s ease;
+  border-radius: 1.5rem;
+}
+
+.rpc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 20px;
+  padding: 1rem;
+}
+
+.rpc-title {
+  font-size: $app_font_size_16;
+}
+
+.rpc-question-count {
+  color: #666;
+}
+
+/* Card Styles */
+.rpc-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.rpc-card:nth-child(even) {
+  background-color: rgba(var(--app_body_bg_color), 0.5);
+}
+
+.rpc-question-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.rpc-question-text {
+  font-size: $app_font_size_14;
+}
+
+.rpc-question-number {
+  color: #888;
+  margin-right: 6px;
+}
+
+.rpc-score {
+  background-color: #e6f1ff;
+  color: #0060c0;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* Options */
+.rpc-options {
+  margin-top: 16px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rpc-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #333;
+  cursor: pointer;
+}
+
+.rpc-option input[type="radio"] {
+  margin-top: 3px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  .rpc-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .rpc-question-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.rpc-option-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: $app_font_size_14;
+}
+
+//RiskProfileTableAdvisor
+.risk-profile-form {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.profile-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #fdfdff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.profile-id-badge {
+  padding: 0.5rem 1.2rem;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.profile-input {
+  flex: 1 1 150px;
+  min-width: 150px;
+}
+
+.static-value {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.arrow_badge {
+  position: relative;
+  color: white;
+  padding: 0.75rem 2rem 0.5rem 1rem;
+  border-radius: 6px 0 0 6px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 0;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-left: 20px solid var(--arrow-color);
+  }
+}
+
+.total-score-display {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+

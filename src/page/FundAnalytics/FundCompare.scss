@@ -1,0 +1,290 @@
+@import "../../assets/all.scss";
+
+.FundComparecard {
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $app_w_color;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Optional: Add hover effect to enhance the 3D feel */
+.FundComparecard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15),
+    0 12px 40px 0 rgba(0, 0, 0, 0.15);
+}
+.Fundname {
+  /* Body/Paragraph_2: Bold */
+  font-family: $app_font_Poppins_Regular;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $app_font_size_16;
+  line-height: 22px;
+  /* identical to box height */
+  // color: rgba(var(--primary-color), 1);
+  margin: 25px 0;
+  min-height: 3rem;
+}
+.navvalue {
+  font-family: $app_font_Poppins_Regular;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $app_font_size_32;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+  letter-spacing: -0.8px;
+  // color: rgba(var(--form-label-color), 1);
+}
+
+.navlable {
+  font-family: $app_font_Poppins_Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $app_font_size_16;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  // color: rgba(var(--form-label-color), 1);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.navyear {
+  font-family: $app_font_Poppins_Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $app_font_size_16;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  .navprofit {
+    color: #00a38e;
+  }
+  .navloss {
+    color: #a30000;
+  }
+}
+
+.Fund_BSE {
+  border-collapse: collapse;
+  width: 100%;
+
+  th {
+    font-family: $app_font_Poppins_SemiBold;
+    font-size: $app_font_size_16;
+    line-height: 24px;
+    padding: 5px;
+    background-color: rgba(var(--app_body_bg_color), 1);
+  }
+
+  td {
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $app_font_size_14;
+    line-height: 24px;
+    color: rgba(var(--default_text_color), 1);
+    padding: 5px;
+  }
+
+  .label {
+    width: 50px;
+    min-width: 50px;
+    text-align: left;
+  }
+
+  .value {
+    width: 80px;
+    min-width: 80px;
+    text-align: right;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(var(--app_body_bg_color), 0.5);
+  }
+}
+
+.Sectordiv {
+  background-color: $app_body_background_color;
+}
+.AppbarChartDiv {
+  height: 440px;
+  background: #fff;
+}
+// .Fundcard,
+// .Fundfullcard {
+//   background-color: $app_body_background_color;
+//   border-radius: 4px;
+//   padding: 15px 15px;
+//   width: calc(50% - 15px);
+//   height: 76px;
+//   margin: 5px;
+
+//   .FundcardLable {
+//     /* Aum (in-CR) */
+//     margin-bottom: 10px;
+//     font-family: $app_font_Poppins_Regular;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: $app_font_size_14;;
+//     line-height: 21px;
+//     /* identical to box height, or 150% */
+
+//     color: rgba(var(--default_text_color), 1);
+//   }
+//   .FundcardVlaue {
+//     font-family: $app_font_Poppins_SemiBold;
+//     font-style: normal;
+//     font-size: $app_font_size_14;;
+//     line-height: 21px;
+//     /* identical to box height, or 150% */
+
+//     color: rgba(var(--default_text_color), 1);
+//   }
+// }
+.Fundcard,
+.Fundfullcard {
+  background-color: $app_body_background_color;
+  border-radius: 4px;
+  padding: 15px;
+  width: calc(50% - 15px);
+  margin: 5px;
+  /* Remove fixed height */
+  min-height: 76px; /* Set minimum height instead */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .FundcardLable {
+    margin-bottom: 10px;
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $app_font_size_14;
+    line-height: 21px;
+    color: rgba(var(--default_text_color), 1);
+  }
+
+  .FundcardVlaue {
+    font-family: $app_font_Poppins_SemiBold;
+    font-style: normal;
+    font-size: $app_font_size_14;
+    line-height: 21px;
+    color: rgba(var(--default_text_color), 1);
+    word-break: break-word; /* Ensure long words break */
+    overflow-wrap: break-word; /* Alternative property for word breaking */
+  }
+}
+.Fundfullcard {
+  width: calc(100% - 20px);
+  height: auto;
+  position: relative;
+  left: 5px;
+}
+
+/* FundPerformanceTable.css */
+.fund-bse-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fund-bse-table th,
+.fund-bse-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.fund-bse-table th {
+  font-weight: 600;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.fund-bse-table td:first-child {
+  width: 30%;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.fund-bse-table td:last-child {
+  width: 70%;
+}
+
+/* For number alignment - optional */
+.fund-bse-table .numeric-cell {
+  text-align: right;
+}
+
+/* Add to FundPerformanceTable.css */
+.benchmark-value {
+  color: #666;
+  font-size: $app_font_size_14;
+  margin-left: 8px;
+}
+
+.numeric-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.lineChartDiv {
+  position: relative;
+  right: 10%;
+}
+
+/* Table Header */
+.holdings-table-header {
+  display: flex;
+  background-color: rgba(var(--app_body_bg_color), 1);
+  padding: 10px 12px;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+}
+
+.holdings-table-header-cell {
+  flex: 1;
+  font-size: $app_font_size_16;
+}
+
+/* Table Rows */
+.holdings-table-row {
+  display: flex;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  background-color: #FFFFFF;
+}
+
+.holdings-table-row:nth-child(even) {
+  background-color: rgba(var(--app_body_bg_color), 0.5);
+}
+
+.holdings-table-row:hover {
+  background-color: #f9f9f9;
+}
+
+.holdings-table-cell {
+  flex: 1;
+  padding: 0px;
+  font-size: 14px;
+}
+
+.holdings-table-cell-centered {
+  flex: 1;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Pagination */
+.holdings-pagination-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

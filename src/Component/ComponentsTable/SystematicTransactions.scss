@@ -1,0 +1,56 @@
+.systematic-transactions {
+    width: 100%;
+  }
+  
+  .header h2 {
+    font-size: $app_font_size_18;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .transaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  
+  .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F8FF;
+    color: #6A6AB6;
+    border-radius: 50%;
+  }
+  
+  .transaction-icon {
+    font-size: $app_font_size_20;
+  }
+  
+  .transaction-details {
+    flex: 1;
+    margin-left: 16px;
+  }
+  
+  .title {
+    font-size: $app_font_size_16;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: $app_font_size_14;
+    color: #555;
+    margin: 4px 0 0;
+  }
+  
+  .amount {
+    font-size: $app_font_size_16;
+    font-weight: bold;
+    color: #6a6ab6;
+  }
+  

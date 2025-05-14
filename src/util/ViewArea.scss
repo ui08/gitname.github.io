@@ -1,0 +1,64 @@
+@import "../assets/all.scss";
+
+/* Container Styling */
+.view-area {
+  height: 400px;
+  background-color: $app_w_color; /* White background */
+  border: 3px dashed $app_primary_color; /* Light dashed border */
+  border-radius: 8px; /* Rounded corners */
+  // box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 2rem; /* Add space inside */
+  text-align: center; /* Center align for placeholder */
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
+  }
+}
+
+/* Placeholder Image */
+.placeholder-image {
+  width: auto; /* Fixed width for placeholder */
+  height: auto;
+  margin: 0 auto 1rem; /* Center with margin-bottom */
+  opacity: 0.8; /* Slight opacity */
+}
+
+/* Placeholder Text */
+.placeholder-text {
+  color: #6c757d; /* Bootstrap muted text color */
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Report Content */
+.report-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a; /* Dark blue */
+  margin-bottom: 1rem;
+}
+
+.report-content {
+  font-size: 1rem;
+  color: #4b5563; /* Grayish text */
+  line-height: 1.6;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 700px; /* Content width constraint */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .view-area {
+    padding: 1.5rem; /* Reduce padding on small screens */
+  }
+
+  .report-title {
+    font-size: 1.2rem;
+  }
+
+  .report-content {
+    font-size: 0.9rem;
+  }
+}

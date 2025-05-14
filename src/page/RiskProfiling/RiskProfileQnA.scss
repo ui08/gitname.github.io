@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
+.rpqa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rpqa-question-card {
+    width: 100%;
+  }
+  
+  .rpqa-question-header h3{
+    margin: 0 0 20px;
+    font-size: 1.5rem;
+    background-image: url(../../assets/img/QuestionBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit:cover;
+    border-radius: 20px 20px 0 0;
+    height: 4rem;
+    max-width: 24rem;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center; /* Centers text vertically */
+    padding-left: 1rem; /* Moves text slightly to the right */
+    justify-content: start; /* Centers text horizontally */
+    text-align: center; /* Ensures text is centered */
+  }
+  
+  .rpqa-question-text p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+    margin-left: 1rem;
+  }
+  
+  .rpqa-options-list {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 2rem;
+  }
+  
+  .rpqa-options-list li {
+    margin: 10px 0;
+  }
+  
+  .rpqa-options-list label {
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .rpqa-options-list input[type='radio'] {
+    margin-right: 10px;
+  }
+  
+  .rpqa-navigation-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+  }
+
+  .rpqa-options-list li label span {
+    margin-right: 8px;
+  }
+  
+//   .rpqa-navigation-buttons button {
+//     padding: 10px 20px;
+//     border: none;
+//     border-radius: 4px;
+//     background-color: #007bff;
+//     color: white;
+//     cursor: pointer;
+//     transition: background-color 0.3s;
+//   }
+  
+//   .rpqa-navigation-buttons button:disabled {
+//     background-color: #ccc;
+//     cursor: not-allowed;
+//   }
+  
+//   .rpqa-navigation-buttons button:hover:not(:disabled) {
+//     background-color: #0056b3;
+//   }
+  

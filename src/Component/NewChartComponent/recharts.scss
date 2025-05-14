@@ -1,0 +1,11 @@
+@import "../../assets/all.scss";
+.recharts-legend-item-text,
+.recharts-cartesian-axis-tick {
+  font-size: 0.8rem !important;
+  font-family: $app_font_Poppins_Regular;
+  color: $app_default_text_color !important;
+}
+.recharts-tooltip-wrapper {
+  font-size: 0.8rem !important;
+  font-family: $app_font_Poppins_Regular;
+}

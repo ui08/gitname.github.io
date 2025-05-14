@@ -1,0 +1,47 @@
+@import "../../assets/all.scss";
+.label-heading-select {
+  font-family: $app_font_Poppins_Regular;
+}
+.select-box {
+  font-family: $app_font_Poppins_Regular;
+  height: 3.5rem;
+  margin: 1rem 0;
+}
+.label-heading-select-log {
+  font-family: $app_font_Poppins_Regular;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0px;
+  font-size: 1rem;
+  width: 100%;
+  color: rgba(var(--default_text_color), 1);
+}
+
+/* InputSelect.scss */
+.select-box .Select-control {
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+// .select-box .Select-multi-value-wrapper {
+//   display: flex;
+//   flex-wrap: nowrap; /* Prevent wrapping */
+//   overflow: hidden;
+// }
+
+.select-box .Select-value {
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.select-box .label-heading-select,
+.select-box .label-heading-select-log {
+  white-space: nowrap; /* Prevent label wrapping */
+}
+.previewFlag {
+  div {
+    &[aria-disabled="true"] {
+      background-color: rgba(var(--form-input-color), 0.4);
+    }
+  }
+}

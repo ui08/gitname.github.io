@@ -1,0 +1,302 @@
+@import "../../assets/all.scss";
+.CorporateReportscard-Generating {
+  // border: 1px solid rgba(var(--muted-color), 1);
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+}
+.CorporateReportscard-Partially {
+  // border: 1px solid rgba(var(--primary-color), 1);
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+}
+.CorporateReportscard-Failed {
+  // border: 1px solid rgba(var(--danger-color), 1);
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+}
+.CorporateReportscard-ReportGenerated {
+  // border: 1px solid rgba(var(--success-color), 1);
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+}
+.CorporateReportscard {
+  box-sizing: border-box;
+  padding: 32px;
+  height: 325px;
+  background: $app_w_color;
+
+  border-radius: 24px;
+
+  .filename {
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $app_font_size_20;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    gap: 10px;
+    color: $app_default_text_color;
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide the overflowed text */
+    text-overflow: ellipsis; /* Display ellipsis (...) when the text overflows */
+
+    padding: 10px;
+    &:hover {
+      text-overflow: clip; /* Remove the ellipsis on hover */
+    }
+  }
+  .Uploader {
+    /* Frame 48098482 */
+
+    /* Auto layout */
+    display: flex;
+
+    align-items: center;
+    padding-left: 8px;
+    gap: 10px;
+
+    .Uploadertext {
+      /* Upload Date: */
+
+      width: 115px;
+      height: 24px;
+
+      font-family: $app_font_Poppins_Regular;
+      font-style: normal;
+      font-weight: 300;
+      font-size: $app_font_size_16;
+      /* identical to box height, or 150% */
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.5px;
+    }
+    .Uploaderdata {
+      /* 20 Sep 2024 06:48:11 PM */
+
+      width: 70%;
+      height: 24px;
+
+      font-family: $app_font_Poppins_Regular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: $app_font_size_16;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.5px;
+    }
+  }
+  .status {
+    .statustextdiv {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      gap: 10px;
+      justify-content: space-between;
+      .statustext {
+      }
+      .statustext-Generating {
+        color: rgba(var(--muted-color), 1);
+      }
+      .statustext-Partially {
+        color: rgba(var(--primary-color), 1);
+      }
+      .statustext-Failed {
+        color: rgba(var(--danger-color), 1);
+      }
+      .statustext-ReportGenerated {
+        color: rgba(var(--success-color), 1);
+      }
+
+      .statusdata {
+      }
+      .statusdata-Generating {
+        color: rgba(var(--muted-color), 1);
+      }
+      .statusdata-Partially {
+        color: rgba(var(--primary-color), 1);
+      }
+      .statusdata-Failed {
+        color: rgba(var(--danger-color), 1);
+      }
+      .statusdata-ReportGenerated {
+        color: rgba(var(--success-color), 1);
+      }
+    }
+    .statusbar {
+      .progress {
+        height: 15px;
+        background: transparent;
+        margin-top: -18px;
+      }
+      .bg-Generating {
+        width: 394px;
+        height: 7px;
+        background: rgba(var(--muted-color), 1);
+        border-radius: 10px;
+      }
+      .bg-Partially {
+        width: 394px;
+        height: 7px;
+        background: rgba(var(--primary-color), 1);
+        border-radius: 10px;
+      }
+      .bg-Failed {
+        width: 394px;
+        height: 7px;
+        background: rgba(var(--danger-color), 1);
+        border-radius: 10px;
+      }
+      .bg-ReportGenerated {
+        width: 394px;
+        height: 7px;
+        background: rgba(var(--success-color), 1);
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.CorporateReportscardbtn {
+  position: relative;
+  top: -17px;
+  @include screen-xl() {
+    position: relative;
+    top: -17px;
+    right: 25px;
+  }
+  @include screen-lg() {
+    position: relative;
+    top: -17px;
+    right: 25px;
+  }
+  @include screen-md() {
+    position: relative;
+    top: -17px;
+    right: 25px;
+  }
+  @include screen-sm() {
+    position: relative;
+    top: -17px;
+    right: 25px;
+  }
+  @include screen-xs() {
+    position: relative;
+    top: -17px;
+    right: 25px;
+  }
+  @include screen-xxs() {
+    position: relative;
+    top: -17px;
+    right: 25px;
+  }
+  button {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+    gap: 4px;
+
+    width: 75px;
+    height: 61px;
+    background: rgba(var(--primary-color), 0.2);
+    border: 1px solid rgba(var(--primary-color), 1);
+    border-radius: 8px;
+    color: rgba(var(--primary-color), 1);
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 24px;
+    margin: 10px;
+    svg {
+      color: rgba(var(--primary-color), 1);
+      font-size: $app_font_size_15;
+    }
+    &:hover {
+      background: rgba(var(--primary-color), 0.2);
+      border: 1px solid rgba(var(--primary-color), 1);
+    }
+  }
+}
+.btnDownloaddisbale {
+  button {
+    pointer-events: none;
+    background: rgba(var(--muted-color), 0.5);
+    border: 1px solid rgba(var(--muted-color), 1);
+    color: rgba(var(--default_text_color), 0.5);
+
+    svg {
+      color: rgba(var(--muted-color), 0.5);
+      font-size: $app_font_size_15;
+    }
+    &:hover {
+      background: rgba(var(--muted-color), 0.5);
+      border: 1px solid rgba(var(--muted-color), 0.1);
+    }
+  }
+}
+
+.paginationdiv {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+  margin-bottom: 25px;
+  .pagination {
+    li {
+      padding: 10px;
+      font-family: $app_font_Poppins_Medium;
+    }
+
+    .active {
+      color: rgba(var(--primary-color), 1);
+    }
+    .previous {
+      /* icon */
+
+      svg {
+        color: rgba(var(--primary-color), 1);
+      }
+    }
+    .next {
+      svg {
+        color: rgba(var(--primary-color), 1);
+      }
+    }
+    .disabled {
+      svg {
+        color: rgba(var(--primary-color), 0.5);
+      }
+    }
+  }
+}
+.corporateReportHading {
+  /* Past Downloads */
+
+  font-family: $app_font_Poppins_Regular;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $app_font_size_18;
+  line-height: 24px;
+
+  letter-spacing: 0.5px;
+
+  color: rgba(var(--primary-color), 1);
+}
+.ReportsRequest {
+  /* Corporate Reports Request */
+
+  font-family: $app_font_Poppins_Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $app_font_size_20;
+  line-height: 24px;
+
+  letter-spacing: 0.5px;
+
+  color: #000000;
+}

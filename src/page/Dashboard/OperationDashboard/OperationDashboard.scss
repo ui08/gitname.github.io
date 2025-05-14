@@ -1,0 +1,626 @@
+@import "../../../assets/all.scss";
+
+.op_Dashboard {
+  background-color: transparent !important;
+}
+
+.op_content_1 {
+  min-height: 350px;
+}
+.reaumcharts_sidebar {
+  background-color: $app_w_color;
+  padding: 10px;
+  border-radius: 28px !important;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 28px;
+}
+
+.reaumcharts {
+  width: 100%;
+  height: 350px;
+
+  .recharts-wrapper {
+  }
+
+  .recharts-legend-item {
+    .recharts-default-legend {
+      bottom: 10px;
+    }
+    svg {
+      width: 16px !important;
+      height: 15px !important;
+    }
+  }
+  .recharts-legend-wrapper {
+    bottom: 30px !important;
+  }
+}
+// .reaumcharts {
+//   width: 100%;
+//   height: 350px;
+
+//   .recharts-legend-wrapper {
+//     transform: translate(10px, -30px);
+//   }
+//   .recharts-wrapper {
+//     width: calc(100% - 48px) !important;
+//   }
+//   .recharts-legend-item {
+//     svg {
+//       width: 16px !important;
+//       height: 15px !important;
+//     }
+//   }
+// }
+.Transaction_Product_Type_charts {
+}
+.newscard {
+  height: 400px;
+
+  .newscardValue {
+    .newscardValuediv {
+      button {
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .newscardtext_title {
+      }
+    }
+  }
+}
+
+.newscardimg {
+  aspect-ratio: 16 / 9;
+  object-fit: fill;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.newscardtext {
+  position: absolute;
+  bottom: 1px;
+  width: calc(100% - 2px);
+  padding: 10px;
+  background: #000000c4;
+  margin: 0 auto;
+  left: 1px;
+  font-size: $app_font_size_14;
+  color: #fff;
+  font-family: $app_font_Poppins_Regular;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.newscardbtn {
+  position: absolute;
+  bottom: 40%;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-weight: bold;
+  z-index: 10;
+
+  svg {
+    font-weight: 900;
+    color: #ffffff;
+  }
+}
+.newscardNextbtn {
+  left: 86%;
+}
+.newscardPreviousbtn,
+.newscard0Nextbtn {
+  left: 0%;
+}
+
+.mincards {
+}
+.btnGro {
+  display: flex;
+  margin-bottom: 25px;
+
+  .My_all_btn {
+    /* Frame 32 */
+    margin-left: 15px;
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-family: $app_font_Poppins_Medium;
+    width: 85px;
+    height: 46px;
+    border-radius: 0;
+    background: #f6f9ff;
+    border-bottom: 1px solid #e3ebff;
+  }
+  .actbtn {
+    color: #38479b;
+    background: #f6f9ff;
+    border-bottom: 1px solid #38479b;
+  }
+}
+.op_content_2 {
+  min-height: 380px;
+  margin-bottom: 10px;
+
+  @include screen-xxl() {
+    height: 380px;
+  }
+  @include screen-xl() {
+    height: 380px;
+  }
+  @include screen-lg() {
+    height: 380px;
+  }
+  @include screen-md() {
+    height: 380px;
+  }
+
+  @include screen-sm() {
+    height: 380px;
+    padding: 0%;
+  }
+
+  @include screen-xs() {
+    height: 380px;
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+
+  @include screen-xxs() {
+    height: 300px;
+  }
+}
+.op_content_3 {
+  min-height: 40px;
+  margin-bottom: 10px;
+
+  @include screen-xxl() {
+    height: 40px;
+  }
+  @include screen-xl() {
+    height: 40px;
+  }
+  @include screen-lg() {
+    height: 40px;
+  }
+  @include screen-md() {
+    height: 40px;
+  }
+
+  @include screen-sm() {
+    height: 40px;
+    padding: 0%;
+  }
+
+  @include screen-xs() {
+    height: 40px;
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+
+  @include screen-xxs() {
+    height: 40px;
+  }
+}
+.totaldiv {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 10px;
+  background-color: $app_w_color;
+}
+
+.opDashbord_card {
+  /* Rectangle 331 */
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+
+  background: $app_w_color;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 25px;
+  font-family: $app_font_Poppins_Regular;
+
+  &_header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $app_font_size_16;
+    line-height: 28px;
+    /* or 140% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    color: $app_default_text_color;
+    margin-bottom: 15px;
+  }
+  &_body {
+  }
+}
+.Client_Analysis_charts_icon {
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .faUserTie {
+    border: 5px solid $app_primary_color;
+    /* padding: 15px; */
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(
+      105deg,
+      $app_w_color,
+      $app_body_background_color
+    );
+    svg {
+      font-size: 2rem;
+    }
+  }
+  .faLayerGroup {
+    // border: 5px solid $app_primary_color;
+    /* padding: 15px; */
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(
+      105deg,
+      $app_w_color,
+      $app_body_background_color
+    );
+    svg {
+      font-size: 2rem;
+    }
+  }
+}
+.Client_Analysis_charts_text {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.alignicon {
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(var(--app_body_bg_color), 1);
+  text-align: center;
+  color: rgba(var(--primary-color), 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aligntext {
+  text-align: left;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_14;
+  // color: $app_primary_color;
+}
+.aligntext1 {
+  text-align: left;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_14;
+}
+.AUM_Reportcard {
+  width: 225px;
+  height: 4.5rem;
+  margin-bottom: 10px;
+  background: #ffffff;
+  box-shadow: 0px 0px 21.1px 2px #e3ebff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: $app_font_size_14;
+  @include screen-xxl() {
+    width: 225px;
+  }
+  @include screen-xl() {
+    width: 200px;
+  }
+  @include screen-lg() {
+    width: 200px;
+  }
+  @include screen-md() {
+    width: 200px;
+  }
+
+  @include screen-sm() {
+    width: 200px;
+    padding: 0%;
+  }
+
+  @include screen-xs() {
+    width: 200px;
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+
+  @include screen-xxs() {
+    width: 200px;
+  }
+
+  &_bar {
+    width: 25.94px;
+    height: 4.5rem;
+    margin-right: 10px;
+
+    border-radius: 12px 0px 0px 12px;
+    &_Investment {
+      background: #ffc444;
+    }
+    &_DIV_REINV {
+      background: #fa60a9;
+    }
+    &_ABS_return {
+      background: #219542;
+    }
+    &_Debt {
+      background: #a07dff;
+    }
+    &_SOL_Oriented {
+      background: #6076fa;
+    }
+    &_DIV_Paid {
+      background: #5fb6fa;
+    }
+    &_AUM {
+      background: #4169e1;
+    }
+    &_Equity {
+      background: #ff4f79;
+    }
+    &_Hybrid {
+      background: #ffa15a;
+    }
+    &_Others {
+      background: #5ff6fa;
+    }
+  }
+}
+.AUM_Report_card_div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: row;
+}
+.AUM_Performance_charts {
+  width: 100%;
+  height: 300px;
+
+  .recharts-wrapper {
+  }
+
+  .recharts-legend-item {
+    svg {
+      width: 16px !important;
+      height: 15px !important;
+    }
+  }
+}
+.AUM_Growth_Report {
+  .table_btn_div {
+    display: none;
+  }
+  .AgGridTable {
+    max-height: 300px !important;
+  }
+  .AgGridTableCol {
+    height: 70vh;
+  }
+}
+.Transaction_Reportcard {
+  width: 225px;
+  height: 86px;
+  margin-bottom: 10px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 21.1px 2px #e3ebff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include screen-xxl() {
+    width: 225px;
+  }
+  @include screen-xl() {
+    width: 200px;
+  }
+  @include screen-lg() {
+    width: 200px;
+  }
+  @include screen-md() {
+    width: 200px;
+  }
+
+  @include screen-sm() {
+    width: 200px;
+    padding: 0%;
+  }
+
+  @include screen-xs() {
+    width: 200px;
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+
+  @include screen-xxs() {
+    width: 200px;
+  }
+
+  &_bar {
+    width: 25.94px;
+    height: 86px;
+    margin-right: 10px;
+
+    border-radius: 12px 0px 0px 12px;
+    &_Inflow {
+      background: #ffc444;
+    }
+    &_DIV_REINV {
+      background: #fa60a9;
+    }
+    &_Outflow {
+      background: #219542;
+    }
+
+    &_DIV_Paid {
+      background: #5fb6fa;
+    }
+    background: #5fb6fa;
+  }
+}
+.Transaction_Report_card_div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: row;
+}
+.Client_SIP_Reportcard {
+  width: 225px;
+  height: 3.5rem;
+  margin-bottom: 10px;
+  background: #ffffff;
+  box-shadow: 0px 0px 21.1px 2px #e3ebff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: $app_font_size_14;
+
+  @include screen-xxl() {
+    width: 18rem;
+  }
+  @include screen-xl() {
+    width: 18rem;
+  }
+  @include screen-lg() {
+    width: 18rem;
+  }
+  @include screen-md() {
+    width: 18rem;
+  }
+
+  @include screen-sm() {
+    width: 200px;
+    padding: 0%;
+  }
+
+  @include screen-xs() {
+    width: 200px;
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+
+  @include screen-xxs() {
+    width: 200px;
+  }
+
+  &_bar {
+    width: 25.94px;
+    height: 3.5rem;
+    margin-right: 10px;
+
+    border-radius: 12px 0px 0px 12px;
+    &_Total_Active {
+      background: #ffc444;
+    }
+    &_Total_SIP {
+      background: #fa60a9;
+    }
+    &_Average_SIP {
+      background: #219542;
+    }
+
+    background: #5fb6fa;
+  }
+}
+.Client_SIP_Report_card_div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  // justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: row;
+}
+
+@import "../../../assets/all.scss";
+
+.op_table_Component {
+  border-collapse: collapse;
+  width: 100%;
+  thead {
+    th {
+      font-family: $app_font_Poppins_SemiBold;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.9rem;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+      padding: 10px;
+      border-bottom: 1px solid rgba(var(--app_body_bg_color), 1);
+      color: $app_default_text_color;
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 10px;
+        border-bottom: 1px solid rgba(var(--app_body_bg_color), 1);
+        font-family: $app_font_Poppins_Regular;
+        letter-spacing: 0.5px;
+        color: $app_default_text_color;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 28px;
+      }
+    }
+  }
+
+  tr {
+    &:nth-child(even) {
+      background: rgba(var(--app_body_bg_color), 1) !important;
+    }
+  }
+}
+
+.ammount_Value {
+  display: flex;
+  justify-content: end;
+}
+.NewsCarouselop {
+  border-radius: 28px !important;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 28px;
+  height: 380px;
+}
+
+.clientCard {
+  background-color: $app_w_color;
+  border-radius: 15px;
+}

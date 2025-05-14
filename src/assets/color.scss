@@ -1,0 +1,105 @@
+:root {
+  --primary-color: 56, 71, 155;
+  --default_text_color: 0, 0, 0;
+  --success-color: 20, 108, 67;
+  --danger-color: 255, 0, 0;
+  --warning-color: 255, 193, 7;
+  --info-color: 13, 202, 240;
+  --muted-color: 108, 117, 125;
+  --form-label-color: 56, 71, 155;
+  --form-error-msg-color: 255, 0, 0;
+  --form-input-color: 255, 255, 255;
+  --form-read-only-text-color: 128, 128, 128;
+  --breadcrumb_color: 0, 0, 0;
+  --W_color: 255, 255, 255;
+  --app_body_bg_color: 252, 252, 255;
+
+  // Buttons
+  --buton_primary_background_color: 56, 71, 155;
+  --buton_primary_text_color: 255, 255, 255;
+  --button_primary_icon_color: 255, 255, 255;
+  --buton_secondary_background_color: 255, 255, 255;
+  --buton_secondary_text_color: 56, 71, 155;
+  --button_secondary_icon_color: 0, 0, 0;
+  // Header
+  --header_background_color: 255, 255, 255;
+  --header_text_color: 56, 71, 155;
+  --header_icon_color: 56, 71, 155;
+  // Sidebar
+  --sidebar_background_clolor: 96, 118, 250;
+  --sidebar_text_clolor: 255, 255, 255;
+  --sidebar_icon_clolor: 56, 71, 155;
+
+  // Excel Buttons
+  --excel_button_color: 33, 149, 66;
+  --excel_button_boder_color: 255, 255, 255;
+  --excel_button_bg_color: 255, 255, 255;
+  --excel_button_hover_color: 161, 226, 179;
+  // Footer
+  --footer_text_color: 136, 136, 136;
+  // Toggle Button
+  --toggle_button_active_color: 40, 167, 69;
+  --toggle_button_deactive_color: 220, 53, 69;
+  // toast
+  --toastbackground: 56, 71, 155;
+  ---toasttext: 255, 255, 255;
+}
+
+//  *************************WEALTH MANAGEMENT APPLICATION COLORS LIST*******************************
+
+$app_primary_color: rgba(var(--primary-color), 1);
+$app_color_success: rgba(var(--success-color), 1);
+$app_color_danger: rgba(var(--danger-color), 1);
+$app_color_warning: rgba(var(--warning-color), 1);
+$app_color_info: rgba(var(--info-color), 1);
+$app_color_muted: rgba(var(--muted-color), 1);
+$app_w_color: rgba(var(--W_color), 1);
+$app_body_background_color: rgba(var(--app_body_bg_color), 1);
+$app_default_text_color: rgba(var(--default_text_color), 1);
+
+// form variables
+$app_form_label_color: rgba(var(--form-label-color), 1);
+$app_form_error_msg_color: rgba(var(--form-error-msg-color), 1);
+$app_form_input_color: rgba(var(--form-input-color), 1);
+$app_form_readonly_text_color: rgba(var(--form-read-only-text-color), 1);
+
+// Breadcrumb color
+$app_breadcrumb_color: rgba(var(--breadcrumb_color), 1);
+
+// Button primary
+$app_buton_primary_background_color: rgba(
+  var(--buton_primary_background_color),
+  1
+);
+$app_buton_primary_text_color: rgba(var(--buton_primary_text_color), 1);
+$app_button_primary_icon_color: rgba(var(--button_primary_icon_color), 1);
+// Button Secondary
+$app_buton_secondary_background_color: rgba(
+  var(--buton_secondary_background_color),
+  1
+);
+$app_buton_secondary_text_color: rgba(var(--buton_secondary_text_color), 1);
+$app_button_secondary_icon_color: rgba(var(--button_secondary_icon_color), 1);
+
+// Toggle Button
+$app_toggle_button_active_color: rgba(var(--toggle_button_active_color), 1);
+$app_toggle_button_deactive_color: rgba(var(--toggle_button_deactive_color), 1);
+
+// Header
+$app_header_background_color: rgba(var(--header_background_color), 1);
+$app_header_text_color: rgba(var(--header_text_color), 1);
+$app_header_icon_color: rgba(var(--header_icon_color), 1);
+
+// Sidebar
+$app_sidebar_background_color: rgba(var(--sidebar_background_clolor), 1);
+$app_sidebar_text_color: rgba(var(--sidebar_text_clolor), 1);
+$app_sidebar_icon_color: rgba(var(--sidebar_icon_clolor), 1);
+
+// Excel Buttons
+$app_excel_button_bg_color: rgba(var(--excel_button_bg_color), 1);
+$app_excel_button_color: rgba(var(--excel_button_color), 1);
+$app_excel_button_border_color: rgba(var(--excel_button_boder_color), 1);
+$app_excel_button_hover_color: rgba(var(--excel_button_hover_color), 1);
+
+// Footer
+$app_footer_text_color: rgba(var(--footer_text_color), 1);

@@ -1,0 +1,101 @@
+@import '../assets/all.scss';
+
+.file-upload-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: start;
+    font-family: Arial, sans-serif;
+  
+    h3 {
+      font-size: $app_font_size_18;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  
+    .dropzone {
+      border: 2px dashed #7a99ff;
+      border-radius: 10px;
+      padding: 30px;
+      background-color: #f5f9ff;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+  
+      &:hover {
+        background-color: #ebf3ff;
+      }
+  
+      p {
+        margin: 0;
+        font-size: $app_font_size_14;;
+        color: #666;
+  
+        .browse-link {
+          color: #4a80ff;
+          font-weight: bold;
+          cursor: pointer;
+  
+          input {
+            display: none;
+          }
+        }
+      }
+    }
+  
+    .file-list {
+      margin-top: 10px;
+      text-align: left;
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          font-size: $app_font_size_14;;
+          color: #333;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  
+    .file-actions {
+      margin-top: 20px;
+      display: flex;
+      justify-content: start;
+      gap: 10px;
+  
+      .download-button,
+      .upload-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        font-size: $app_font_size_14;;
+        font-weight: bold;
+        cursor: pointer;
+  
+        &:disabled {
+          background-color: #ccc;
+          color: #888;
+          cursor: not-allowed;
+        }
+      }
+  
+      .download-button {
+        background-color: $app_buton_primary_background_color;
+        color: $app_buton_primary_text_color;
+  
+        &:hover:not(:disabled) {
+          background-color: #3a6cff;
+        }
+      }
+  
+      .upload-button {
+        background-color: $app_buton_primary_background_color;
+        color: $app_buton_primary_text_color;
+  
+        &:hover:not(:disabled) {
+          background-color: #3a6cff;
+        }
+      }
+    }
+  }
+  

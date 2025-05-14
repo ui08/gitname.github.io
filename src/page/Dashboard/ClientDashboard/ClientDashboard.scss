@@ -1,0 +1,422 @@
+@import "../../../assets/all.scss";
+
+.Accordionbtn {
+  background-color: $app_primary_color;
+}
+
+.aumchartsdiv {
+  border-right: 1px solid rgba(var(--default_text_color), 1);
+  height: 80%;
+  margin: auto;
+}
+.Client_content_1 {
+  height: 350px;
+}
+.row .Client_content_Top_Holding {
+  height: 620px;
+}
+.row .Last_Transaction {
+  height: 410px;
+  margin-bottom: 20px;
+  font-size: var();
+}
+.row .Market_Cap {
+  height: 410px;
+  margin-bottom: 20px;
+}
+.aumcharts_sidebar {
+  background-color: $app_w_color;
+  padding: 10px;
+  border-radius: 28px !important;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 28px;
+  height: 350px;
+}
+.NewsCarouselClient {
+  padding: 10px;
+  border-radius: 28px !important;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 28px;
+  height: 250px;
+}
+.aumcharts {
+  width: 100%;
+  height: 290px;
+
+  margin-top: -40px;
+
+  .recharts-wrapper {
+  }
+
+  .recharts-legend-item {
+    .recharts-default-legend {
+      bottom: 10px;
+    }
+    svg {
+      width: 16px !important;
+      height: 15px !important;
+    }
+  }
+  .recharts-legend-wrapper {
+    bottom: 30px !important;
+  }
+}
+
+.TotalValue {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  p {
+  }
+  span {
+  }
+}
+
+.holdingsDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 10px;
+  height: 61px;
+}
+.holdings_acc_Div {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background: rgba(var(--W_color), 1);
+  box-shadow: 0px 0px 21.1px 2px rgba(var(--app_body_bg_color), 1);
+  border-radius: 25px;
+  padding: 10px;
+}
+.Dashbord_Accordion {
+  /* Rectangle 6 */
+  box-shadow: 0px 0px 2.1px 2px rgba(var(--app_body_bg_color), 0.5);
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  &:nth-child(odd) {
+    background-color: $app_w_color; // White for odd rows
+  }
+
+  &:nth-child(even) {
+    background-color: $app_body_background_color;
+  }
+
+  &_Header {
+    /* Frame 9 */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 16px;
+
+    border-radius: 8px;
+    div {
+      p {
+        /* label-text */
+        margin: 0;
+        font-family: $app_font_Poppins_Regular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: $app_font_size_14;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+
+        /* M3/sys/light/on-secondary-container */
+        color: $app_default_text_color;
+      }
+    }
+  }
+  &_body {
+    .accordion {
+    }
+  }
+}
+
+.Client_content_2 {
+  height: 380px;
+  margin-bottom: 10px;
+
+  @include screen-xxl() {
+    height: 380px;
+  }
+  @include screen-xl() {
+    height: 380px;
+  }
+  @include screen-lg() {
+    height: 380px;
+  }
+  @include screen-md() {
+    height: 380px;
+  }
+
+  @include screen-sm() {
+    height: 380px;
+    padding: 0%;
+  }
+
+  @include screen-xs() {
+    height: 380px;
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+
+  @include screen-xxs() {
+    height: 300px;
+  }
+}
+.Client_content_3 {
+  height: 480px;
+  margin-bottom: 10px;
+
+  @include screen-xxl() {
+    height: 380px;
+  }
+  @include screen-xl() {
+    height: 380px;
+  }
+  @include screen-lg() {
+    height: 380px;
+  }
+  @include screen-md() {
+    height: 380px;
+  }
+
+  @include screen-sm() {
+    height: 380px;
+    padding: 0%;
+  }
+
+  @include screen-xs() {
+    height: 380px;
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+
+  @include screen-xxs() {
+    height: 300px;
+  }
+}
+.Dashbord_card {
+  /* Rectangle 331 */
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px 25px;
+
+  background: $app_w_color;
+  box-shadow: 0px 0px 21.1px 2px $app_body_background_color;
+  border-radius: 25px;
+  font-family: $app_font_Poppins_Regular;
+
+  &_header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $app_font_size_18;
+    line-height: 28px;
+    /* or 140% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    color: $app_default_text_color;
+    margin-bottom: 15px;
+  }
+  &_body {
+  }
+}
+.Dashbord_card_TreemapChart {
+  width: 100%;
+  height: 320px;
+  margin-top: -1.5rem;
+}
+.Product_Wise_Portfoliocharts {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  top: -3rem;
+  left: -15px;
+
+  .recharts-wrapper {
+  }
+
+  .recharts-legend-item {
+    svg {
+      width: 16px !important;
+      height: 15px !important;
+    }
+  }
+}
+.Asset_Class_Performance_charts {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  left: -15px;
+  .recharts-wrapper {
+  }
+
+  .recharts-legend-item {
+    svg {
+      width: 16px !important;
+      height: 15px !important;
+    }
+  }
+}
+.Portfolio_Performance_charts {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  left: -15px;
+  .recharts-wrapper {
+  }
+
+  .recharts-legend-item {
+    svg {
+      width: 16px !important;
+      height: 15px !important;
+    }
+  }
+}
+
+.Portfolio_Performance_charts_for_Analytics {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-color: $app_body_background_color;
+  border-radius: 0.25rem;
+  .recharts-wrapper {
+  }
+
+  .recharts-legend-item {
+    svg {
+      width: 16px !important;
+      height: 15px !important;
+    }
+  }
+}
+
+.Market_Cap_charts {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  left: -15px;
+  .recharts-wrapper {
+  }
+
+  .recharts-legend-item {
+    svg {
+      width: 16px !important;
+      height: 15px !important;
+    }
+  }
+}
+
+.Dashbord_all {
+  p {
+    margin: 0;
+  }
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+  .buttonClass {
+    width: 8rem;
+    height: 3rem;
+  }
+}
+.Dashbord_card_body {
+  padding: 5px;
+}
+
+.Systematicdiv {
+  display: flex;
+  height: auto;
+  max-height: 120px;
+  margin-bottom: 5px;
+  &:last-child {
+    .Systematiciconbar {
+      background-image: none;
+    }
+  }
+  .SystematictextDiv {
+    display: flex;
+    width: 100%;
+    margin-left: 5px;
+    padding: 5px;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+
+    .SystematictextDiv1 {
+      width: calc(100% - 110px);
+      .Systematictexttext1 {
+        font-family: $app_font_Poppins_Regular;
+        font-style: normal;
+        font-weight: 300;
+        font-size: $app_font_size_16;
+        line-height: 24px;
+
+        color: $app_default_text_color;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 120%;
+        height: 60px;
+      }
+    }
+
+    .SystematictextAmmoutn {
+      font-family: $app_font_Poppins_Bold;
+      font-style: normal;
+      font-weight: 500;
+      font-size: $app_font_size_16;
+      line-height: 24px;
+
+      color: $app_primary_color;
+    }
+    /* Nippon India retirement fund wealth creation (G) & 60 more */
+  }
+}
+.lastTransactiondiv {
+  height: 60px;
+}
+.SystematictexttextP1 {
+  font-family: $app_font_Poppins_Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $app_font_size_16;
+  color: $app_color_success;
+  margin-bottom: 0;
+}
+.SystematictexttextP2 {
+  font-family: $app_font_Poppins_Bold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px !important;
+  color: $app_default_text_color;
+  margin-bottom: 0;
+}
+.Systematiciconbar {
+  background-image: url(./bar.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 41px;
+}
+.Dashbord_AgTabley {
+  margin-top: -20px;
+}
+.AgGridassetTableCol,
+.AgGridtopHoldingTableCol,
+.AgGridproductTableCol {
+  .AgGridTableCol {
+    min-height: 45vh;
+  }
+}

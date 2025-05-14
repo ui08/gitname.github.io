@@ -1,0 +1,341 @@
+@import "../../assets/all.scss";
+.dashboardContainer {
+  min-height: screen;
+  flex-direction: column;
+  padding: 24px;
+  display: flex;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.headerLeft {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.headerTitle {
+  color: $app_default_text_color;
+  font-family: $app_font_Poppins_SemiBold;
+  font-size: $app_font_size_24;
+}
+
+.categoryNav {
+  gap: 16px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.categoryItem {
+  color: $app_default_text_color;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+}
+
+.contentLayout {
+  justify-content: space-between;
+  gap: 24px;
+  display: flex;
+}
+
+.mainContent {
+  flex: 1;
+}
+
+.watchlistButton {
+  color: #38479b;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+}
+
+.statsGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+  display: grid;
+}
+.StockstatsGrid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+  display: grid;
+}
+.statsCard {
+  background-color: $app_w_color;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.statsTitle {
+  color: #22262c;
+  margin-bottom: 16px;
+  font-family: Roboto;
+  font-size: $app_font_size_16;
+}
+
+.statsValue {
+  color: #219542;
+  font-family: Roboto;
+  font-size: $app_font_size_20;
+}
+
+.statsValue.negative {
+  color: #e74242;
+}
+
+.statsChange {
+  color: #219542;
+  background-color: #e1ffe9;
+  border-radius: 15px;
+  padding: 10px 8px;
+  font-family: Roboto;
+  font-size: $app_font_size_14;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.statsSubtitle {
+  color: #38479b;
+  align-items: center;
+  gap: 4px;
+  font-family: Roboto;
+  font-size: $app_font_size_14;
+  display: flex;
+}
+
+.metricsContainer {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+  display: grid;
+}
+
+.metricCard {
+  border-radius: 8px;
+  /* padding: 16px; */
+  box-shadow: 1px 1px 3.1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+
+  height: 120px;
+  background-color: $app_w_color;
+}
+
+.metricRow {
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  padding: 24px;
+}
+
+.metricLabel {
+  color: $app_default_text_color;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+}
+
+.metricValue {
+  color: $app_default_text_color;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+  font-weight: 500;
+}
+
+.metricValueBold {
+  color: $app_default_text_color;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+  font-weight: 700;
+}
+
+.metricLabelWithIcon {
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.actionButtons {
+  gap: 16px;
+  display: flex;
+}
+
+.watchlistBtn {
+  background-color: #f3f8ff;
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 10px;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  color: #38479b;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+  width: 100%;
+}
+
+.sideContent {
+  flex: 1;
+}
+
+.divider {
+  border-color: #ccc;
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top-width: 1px;
+  margin: 24px 0;
+}
+
+.fundManagerCard {
+  background-color: rgba(241, 245, 255, 0.63);
+  border-radius: 16px;
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+.fundManagerTitle {
+  color: #4b5fcb;
+  margin-bottom: 16px;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+}
+
+.fundManagerInfo {
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.fundManagerName {
+  color: #4b5eca;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_18;
+}
+
+.chartsGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+  display: grid;
+}
+
+.chartCard {
+  background-color: $app_w_color;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.chartTitle {
+  color: $app_default_text_color;
+  margin-bottom: 24px;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+}
+
+.chartContent {
+  width: 100%;
+  height: 258px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.chartLegend {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.holdingsSection {
+  background-color: $app_w_color;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.holdingsTitle {
+  color: $app_default_text_color;
+  margin-bottom: 24px;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_16;
+}
+
+.holdingsHeader {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  display: grid;
+  margin-bottom: 16px;
+}
+
+.holdingsBody {
+  margin-top: 16px;
+}
+
+.holdingsRow {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 8px;
+  display: grid;
+}
+
+.holdingName {
+  color: $app_default_text_color;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_14;
+}
+
+.holdingPercentage {
+  color: $app_default_text_color;
+  text-align: center;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_14;
+}
+
+.holdingSector {
+  color: $app_default_text_color;
+  text-align: center;
+  font-family: $app_font_Poppins_Regular;
+  font-size: $app_font_size_14;
+}
+
+@media (max-width: 991px) {
+  .contentLayout {
+    flex-direction: column;
+  }
+
+  .chartsGrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .holdingsHeader,
+  .holdingsRow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .dashboardContainer {
+    padding: 12px;
+  }
+
+  .header {
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,152 @@
+@import "../../assets/all.scss";
+
+.app-input-text-group {
+  &-control {
+    position: relative;
+    height: 3rem;
+    margin: 1.2rem 0;
+  }
+
+  &-label {
+    position: absolute;
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 1rem;
+    top: 0.8rem;
+    width: fit-content;
+    padding-left: 15px;
+    color: rgba(var(--form-label-color), 1);
+    transition: all 0.2s ease;
+    z-index: 1;
+  }
+
+  &-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 0px;
+    resize: none;
+    border: 1px solid rgba(var(--form-label-color), 1);
+    outline: none;
+    background: $app_w_color;
+    box-shadow: rgba(var(--primary-color), 0.1) 0px 1px 3px 0px,
+      rgba(var(--primary-color), 0.06) 0px 1px 2px 0px;
+    transition: all 0.2s ease;
+    border-radius: 15px;
+    color: $app_form_label_color;
+
+    &::placeholder {
+      opacity: 0;
+      visibility: hidden;
+      color: transparent;
+    }
+    &:read-only {
+      opacity: 0.4;
+    }
+    &:focus ~ .app-input-text-group-label,
+    &:not(:placeholder-shown).app-input-text-group-input:not(:focus)
+      ~ .app-input-text-group-label {
+      top: -0.9rem !important;
+      left: 10px;
+      font-size: 0.75rem !important;
+      z-index: 8;
+      transition: all 0.2s ease;
+      font-family: $app_font_Poppins_Regular;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      color: $app_form_label_color;
+      background-color: $app_w_color;
+      padding-left: 5px;
+      width: fit-content;
+    }
+  }
+  &-input-errorsborder {
+    background: rgba(var(--danger-color), 0.1);
+    font-family: $app_font_Poppins_Regular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 1rem;
+  }
+  &-input-hidden {
+    position: absolute;
+  }
+  
+  &-errors {
+    position: absolute;
+    top: 3.5rem;
+    color: rgba(var(--danger-color), 1);
+    margin-left: 1rem;
+    font-size: 14px;
+  }
+  &-input-login {
+    background-color: $app_w_color !important;
+  }
+}
+
+.app-input-text-group-login {
+  &-control {
+    height: 3rem;
+    margin: 2rem 0;
+    position: relative;
+    top: -40px;
+  }
+  &-label {
+    color: rgba(var(--default_text_color), 1) !important;
+    background: $app_w_color;
+  }
+
+  &-input {
+    background: $app_w_color;
+    color: rgba(var(--default_text_color), 1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+  &-input-errorsborder {
+  }
+
+  &-input-previewStyle {
+  }
+  &-errors {
+  }
+  &-input-hidden {
+    position: absolute;
+  }
+}
+
+/* Adjusted CSS for .toggle-password */
+.toggle-password {
+  position: relative;
+  top: -96px;
+  right: -90%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(var(--default_text_color), 1);
+  padding: 0;
+  z-index: 99;
+}
+
+.Captchadiv {
+  height: 100px;
+  position: relative;
+  top: -100px;
+}
+
+input[type="text"]:-webkit-autofill {
+  background-color: #f0f0f0; /* Light background color for autofilled fields */
+  color: #333; /* Text color */
+}
+
+input[type="text"]::-webkit-autofill:focus {
+  background-color: #fff; /* Background changes when autofilled and focused */
+}
