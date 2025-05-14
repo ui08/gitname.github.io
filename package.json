@@ -1,7 +1,7 @@
 {
-  "name": "Wealth_Management_System",
+  "name": "Management_System",
   "version": "1.0.0",
-  "homepage": "/",
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "private": true,
   "dependencies": {
     "@ag-grid-community/theming": "^32.2.0",
@@ -84,6 +84,8 @@
     "build": " react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build:dev": "env-cmd -f .env.dev npm run build ",
     "build:developmentsprint": "env-cmd -f .env.developmentsprint npm run build",
     "tag-version": "node tag-version.js",
@@ -118,6 +120,7 @@
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
     "ajv": "^8.16.0",
-    "babel-jest": "^29.7.0"
+    "babel-jest": "^29.7.0",
+    "gh-pages": "^6.3.0"
   }
 }
