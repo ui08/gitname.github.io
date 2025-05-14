@@ -1,0 +1,16 @@
+{
+  "usesTypeScript": false,
+  "usesCss": true,
+  "cssPreprocessor": "scss",
+  "testLibrary": "Testing Library",
+  "component": {
+    "default": {
+      "path": "/src/Output/GooglChart",
+      "withLazy": true,
+      "withStory": false,
+      "withStyle": true,
+      "withTest": false
+    }
+  },
+  "usesCssModule": false
+}
